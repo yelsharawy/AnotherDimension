@@ -8,4 +8,11 @@ public class ArrayOps {
         return total;
     }
 
+    public static int largest(int[] arr) {
+        int result = Integer.MIN_VALUE;
+        for (int num : arr) {
+            result = Math.max(result, num);
+        }
+        return result;
+    }
 }
