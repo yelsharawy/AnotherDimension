@@ -12,6 +12,7 @@ public class Tester {
         int[][] test2DArr = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
         System.out.println(Arrays.toString(ArrayOps.sumRows(test2DArr))); // [3, 12, 21]
         System.out.println(Arrays.toString(ArrayOps.largestInRows(test2DArr))); // [2, 5, 8]
+        System.out.println(ArrayOps.sum(test2DArr)); // 36
     }
 
 }

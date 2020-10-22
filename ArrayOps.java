@@ -8,12 +8,12 @@ public class ArrayOps {
         return total;
     }
 
-    public static int largest(int[] arr) {
-        int result = Integer.MIN_VALUE;
-        for (int num : arr) {
-            result = Math.max(result, num);
+    public static int sum(int[][] matrix) {
+        int total = 0;
+        for (int[] row : matrix) {
+            total += sum(row);
         }
-        return result;
+        return total;
     }
 
     public static int[] sumRows(int[][] matrix) {
@@ -22,6 +22,15 @@ public class ArrayOps {
             output[i] = sum(matrix[i]);
         }
         return output;
+    }
+
+
+    public static int largest(int[] arr) {
+        int result = Integer.MIN_VALUE;
+        for (int num : arr) {
+            result = Math.max(result, num);
+        }
+        return result;
     }
 
     public static int[] largestInRows(int[][] matrix) {
