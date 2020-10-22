@@ -13,6 +13,22 @@ public class Tester {
         System.out.println(Arrays.toString(ArrayOps.sumRows(test2DArr))); // [3, 12, 21]
         System.out.println(Arrays.toString(ArrayOps.largestInRows(test2DArr))); // [2, 5, 8]
         System.out.println(ArrayOps.sum(test2DArr)); // 36
+
+        // test code from #live-instruction
+        int[][]  A  =  {  {  1,  0, 12, -1 },
+                          {  7, -2,  2,  1 },
+                          { -5, -2,  2, -9 }
+                       };
+        int[]  B  =  {  1, 3, 5 };
+
+        System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
+        /* expected output:
+         * [12, 8, -14]
+         */
+        System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
+        /* expected output:
+        /* [12, 7, 2]
+         */
     }
 
 }
