@@ -29,6 +29,12 @@ public class Tester {
         /* expected output:
         /* [12, 7, 2]
          */
+
+         // part 5
+         // helper method sumCol
+         System.out.println(ArrayOps.sumCol(test2DArr, 0)); // 9
+         System.out.println(ArrayOps.sumCol(test2DArr, 1)); // 12
+         System.out.println(ArrayOps.sumCol(test2DArr, 2)); // 15
     }
 
 }
