@@ -45,6 +45,13 @@ public class Tester {
          print(ArrayOps.sumCol(test2DArr, 2)); // 15
 
          print(ArrayOps.sumCols(test2DArr)); // [9, 12, 15]
+
+         // helper method allEqual
+         print(ArrayOps.allEqual(new int[] {}));  // true
+         print(ArrayOps.allEqual(new int[] {1, 1, 1}));  // true
+         print(ArrayOps.allEqual(new int[] {0, 1, 1}));  // false
+         print(ArrayOps.allEqual(new int[] {1, 0, 1}));  // false
+         print(ArrayOps.allEqual(new int[] {1, 1, 0}));  // false
     }
 
 }

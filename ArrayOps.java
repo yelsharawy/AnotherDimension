@@ -1,5 +1,18 @@
 public class ArrayOps {
 
+    public static boolean allEqual(int[] arr) {
+        if (arr.length == 0) return true;
+        
+        int first = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != first) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     public static int sum(int[] arr) {
         int total = 0;
         for (int num : arr) {
