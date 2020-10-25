@@ -32,6 +32,14 @@ public class ArrayOps {
         return total;
     }
 
+    public static int[] sumCols(int[][] matrix) {
+        int cols = matrix[0].length;
+        int[] output = new int[cols];
+        for (int c = 0; c < cols; c++) {
+            output[c] = sumCol(matrix, c);
+        }
+        return output;
+    }
 
 
     public static int largest(int[] arr) {
