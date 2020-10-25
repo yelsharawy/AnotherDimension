@@ -2,7 +2,7 @@ public class ArrayOps {
 
     public static boolean allEqual(int[] arr) {
         if (arr.length == 0) return true;
-        
+
         int first = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] != first) {
@@ -53,6 +53,16 @@ public class ArrayOps {
         }
         return output;
     }
+    
+
+    public static boolean isRowMagic(int[][] matrix) {
+        return allEqual(sumRows(matrix));
+    }
+
+    public static boolean isColMagic(int[][] matrix) {
+        return allEqual(sumCols(matrix));
+    }
+
 
 
     public static int largest(int[] arr) {
