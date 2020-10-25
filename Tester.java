@@ -61,7 +61,7 @@ public class Tester {
         print(ArrayOps.allEqual(new int[] {1, 0, 1}));  // false
         print(ArrayOps.allEqual(new int[] {1, 1, 0}));  // false
         print();
-        
+
         int[][] rowMagic =  { {  1,  2,  3,  4  },
                               {  2,  3,  4,  1  },
                               {  3,  4,  1,  2  } };  //this is rowMagic but NOT colMagic
@@ -78,6 +78,13 @@ public class Tester {
         print(ArrayOps.isColMagic(rowMagic)); // false
         print(ArrayOps.isColMagic(colMagic)); // true
         print(ArrayOps.isColMagic(bothMagic)); // true
+
+        print();
+
+        int[][] E = { { 2, 4, 2 },
+                      { 2, 2, 2 } };
+        print(ArrayOps.isLocationMagic(E, 0, 1)); // false
+        print(ArrayOps.isLocationMagic(E, 1, 1)); // true
     }
 
 }
